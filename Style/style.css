@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+body{
+    background: #E5E5E5;
+    font-family: "Roboto"
+}
+.nav{
+    background: #322E41;
+    width: 100%;
+}
+nav{
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center
+}
+nav ul{
+    display: flex;
+}
+nav ul a{
+    color: white;
+    padding: 23px 14px;
+    display: block;
+    transition: 500ms;
+}
+nav ul a:hover{
+    color: #D57300;
+    background: white;
+}
+
+.img{
+    margin: 0 0 0 10px;
+}
+header{
+    height: 565px;
+    background: url(../image/Header\ -\ bg.jpg) no-repeat center center /cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* первый центр отвечает за право и лево, другой за центровку по вертикали */
+    color: white;
+}
+.header_text{
+    /* flex-grow: ; растягивает эемент на все свободное пространство по justify content. пишется у дочернего элемента */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    font-size: 50px;
+}
+.desc{
+    font-size: 18px;
+}
+.desc span{
+    font-weight: 700;
+}
+main{
+    width: 1140px;
+    margin: -30px auto 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+section{
+    background: white;
+    width: 540px;
+    padding: 15px;
+    border-radius: 6px;
+}
+.news{
+    display: block;
+}
+.news img{
+    width: 100%;
+    height: 263px;
+    border-radius: 6px;
+    object-fit: cover;
+    /* чтоб артинка растягивалась норм */
+}
+.news_title, .product_tittle{
+    color:#2C2A2A;
+    font-style: 23px;
+    margin: 20px 0 10px;
+}
+.news_desc, .product_desc{
+    color: #9B9B9B;
+}
+.product_desc{
+    line-height: 16px;
+}
+/* line geight высота строки */
+.product{
+    width: 255px;
+}
+.product_link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product_img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.products{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    width: 540px;
+}
+.product_tittle{
+    margin: 12px 0;
+    line-height: 19px;
+    /* line-height: 19px; */
+}
+footer{
+    background: #322E41;
+    padding: 37px 0 57px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+input, textarea{
+    border: none;
+    font-size: 18px;
+    padding: 8px;
+    width: 350px;
+    border-radius: 6px;
+    outline: none;
+    font-family: "Roboto";
+    margin-bottom: 10px;
+}
+textarea{
+    height: 86px;
+    resize: none;
+}
+button{
+    background: #544294;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 5px 0;
+    cursor: pointer;
+}
+.footer_nav{
+display: flex;
+}
+.footer_nav ul{
+    margin-right: 68px;
+}
+.footer_nav ul:last-of-type{
+    margin-right: 68px;
+}
+.footer_nav ul a{
+    color: white;
+    margin-bottom: 10px;
+    transition: 500ms;
+    display: block;
+}
+.footer_nav ul a:hover{
+    color:  #D57300;
+}
+.footer_nav ul li:last-of-type a{
+    margin-bottom: 0;
+}
